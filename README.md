@@ -11,7 +11,7 @@ Before you begin, make sure you have the following items:
 - Mini USB cable
 - USB hub
 
-TODO insert picture of all items
+![Overview](overview.JPG)
 
 Begin by connecting the drive motor to the VESC. The motor has three color-coded connections that correspond with connections on the VESC.
 
