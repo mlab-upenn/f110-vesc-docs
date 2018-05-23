@@ -35,11 +35,11 @@ The VESC should be on the right side of the chassis. Pull the 2-pin VESC battery
 
 Connect the VESC battery connector to the battery splitter, and connect the white 4-pin header on the battery splitter to the corresponding header on the power distribution PCB. Ensure that the large silver toggle switches U$3, U$4, and U$5 on the power board are OFF (toggled towards the white battery header).
 
-![Mounting the VESC](hw_connect_splitter_vesc.jpg)
-![Mounting the VESC](hw_connect_splitter_power_board.jpg)
+![Connecting the Battery](hw_connect_splitter_vesc.jpg)
+![Connecting the Battery](hw_connect_splitter_power_board.jpg)
 
 Plug the battery into the remaining end of the splitter, and tuck the battery into the left side of the chassis.
 
-![Mounting the VESC](hw_mount_battery.jpg)
+![Connecting the Battery](hw_battery_mount.jpg)
 
 At this point, the hardware should be set up, and you can turn the car on by toggling switch U$3 on the power board.
