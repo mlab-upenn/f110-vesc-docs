@@ -5,7 +5,7 @@ Documentation for setting up the VESC 4 on the F1/10 platform
 Before you begin, make sure you have the following items:
 - Traxxas RC Car. This should also come with a servo motor (for steering) and a motor for driving the wheels. You'll need to connect both motors to the VESC later.
 - VESC 4 electronic speed controller
-- Traxxas 11.1v LIPO or NiMH battery
+- Traxxas 11.1v LIPO or 8.4v NiMH battery
 - Battery connector (splitter)
 - Power distribution PCB
 - Mini USB cable
