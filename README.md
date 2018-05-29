@@ -35,7 +35,7 @@ Do the same for the Jetson with four more 35mm standoffs, also mounted on the gl
 
 Mount two more (19mm) standoffs to the front part of the chassis for the LIDAR.
 
-<img src="images/mech_lidar_screws_back.jpg" width="400">
+<img src="images/mech_lidar_screws_front.jpg" width="400">
 
 ## Mounting the Jetson and Power Board
 
@@ -88,11 +88,11 @@ The LIDAR should have two cords: one for power and another for either Ethernet o
 
 Mount the white brackets to the black tree-shaped base as shown in the pictures below.
 
-<img src="images/mech_lidar_brackets_front.jpg" width="400">
+<img src="images/mech_lidar_brackets_back.jpg" width="400">
 
 Attach the LIDAR to the rough side of the base using the two screws. Note: The base has four screw holes and the LIDAR only has two; just attach the two screws where the holes in the LIDAR are.
 
-<img src="images/mech_lidar_brackets_back.jpg" width="400">
+<img src="images/mech_lidar_brackets_front.jpg" width="400">
 
 Locate the two mounting holes on the front of the car near the front bumper. Mount the LIDAR by fitting the two protruding parts of the white mounting brackets into the holes. The open part of the "C" in the brackets should face forward as shown below. If done correctly, two of the holes on the LIDAR base should match up with the two 19mm standoffs you mounted earlier. Secure the base to these standoffd using two 10mm Phillips screws.
 
@@ -119,7 +119,7 @@ Plug a USB micro cable into the USB port on the IMU and the other end into the U
 Plug the cord of the USB hub into the USB port on the Jetson. If your hub has power buttons, ensure all of them are set to the ON position. At this point, your car should be assembled, sans VESC.
 
 # VESC Connections
-Before you begin, make sure you have the following items:
+Make sure you have the following items:
 - Traxxas RC Car. This should also come with a servo motor (for steering) and a motor for driving the wheels. You'll need to connect both motors to the VESC later.
 - VESC 4 electronic speed controller
 - Traxxas 11.1v LIPO or 8.4v NiMH battery
