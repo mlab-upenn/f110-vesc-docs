@@ -1,22 +1,24 @@
 # f110-vesc-docs
-Documentation for setting up the VESC 4 on the F1/10 platform
+Documentation for setting up the F1/10 platform and the VESC speed controller.
 
 # Mechanical Setup
 We will first assemble the car chassis and install the Jetson and power distribution board before setting up the VESC.
 
-You should start with a Traxxas RC car with its chassis stripped away, as shown in the picture below. You car may already have some of the silver metal standoffs installed, but if it does not, we will go through the process of installing them. You can jump to any point of this tutorial and pick up from there.
+You should start with a Traxxas RC car with its chassis stripped away, as shown in the picture below. You car may already have some of the silver metal standoffs installed, but if it does not, we will go through the process of installing them. If you are ahead, you can jump to any point of this tutorial and pick up from there.
 
-TODO picture of bare bones car
+<img src="images/mech_barebones.jpg" width="400">
 
 ## Installing the Base Standoffs
 
 Begin by installing three 45mm standoffs into the circled holes pictured below. Secure the standoffs to the car using three black 10mm Allen screws, with one screw per standoff. Pay attention to where you install the standoffs since there are several mounting holes on the car's base.
 
-TODO picture
+<img src="images/mech_base_screws_circled.jpg" width="400">
+<img src="images/mech_base_allen_screws.jpg" width="400">
+<img src="images/mech_base_screws_attached.jpg" width="400">
 
-Next, install two threaded 14mm standoffs into the front holes in the car base. Don't mount the chassis yet since we still need to mount standoffs for the Jetson and power board to the chassis.
+Next, install two threaded 14mm standoffs into the front holes in the car base. Don't mount the chassis to the car yet since we still need to mount the Jetson and power board to the chassis.
 
-TODO picture
+<img src="images/mech_base_front_screws_attached.jpg" width="400">
 
 ## Installing the Power Board, Jetson, and LIDAR Standoffs
 
@@ -24,49 +26,52 @@ Mount 4 standoffs to the black laser-cut chassis in the position shown below. Th
 
 (**Important:** The chassis has a smooth, glossy side and a rougher side. Ensure the standoffs are mounted on the glossy side, with the screws on the rough side. Otherwise, the power board won't fit when you try to mount it.)
 
-TODO picture of front
-
-TODO picture of back
+<img src="images/mech_power_screws_front.jpg" width="400">
+<img src="images/mech_power_screws_back.jpg" width="400">
 
 Do the same for the Jetson with four more 35mm standoffs, also mounted on the glossy side. For the Jetson, ensure the standoffs are mounted near the **left** cut-out oval on the chassis, not the right one.
 
-TODO picture
+<img src="images/mech_jetson_screws_front.jpg" width="400">
 
 Mount two more (19mm) standoffs to the front part of the chassis for the LIDAR.
 
-TODO picture
+<img src="images/mech_lidar_screws_back.jpg" width="400">
 
 ## Mounting the Jetson and Power Board
 
-Before mounting the power board to the chassis, attach two 25mm standoffs to the power board using Phillips screws.(These are located near the long headers for the Teensy.)
+Before mounting the power board to the chassis, attach two 25mm standoffs to the power board using Phillips screws. (The mounting holes for the standoffs are located near the long headers for the Teensy.)
 
-TODO picture
+<img src="images/mech_power_board_antenna_standoffs.jpg" width="400">
 
 Once you've done this, attach the Jetson Wi-Fi antenna to the standoffs using two more Phillips screws. Ensure that the antenna is mounted towards the board so that when the antennas are extended, they extend over the board and not away from it. See the picture below for clarification.
 
-TODO picture
+<img src="images/mech_power_board_antenna_screws.jpg" width="400">
 
 **Optional:** If you plan to use the Teensy motor driver instead of the VESC, insert the Teensy into the two long headers on the power board. Make sure the USB port faces toward the outside of the board.
 
-TODO picture
+<img src="images/mech_power_board_teensy.jpg" width="400">
 
 Attach the two wires for the Jetson Wi-Fi antenna to the two gold-colored connectors near the fan connector on the heat sink. This can be a little tricky, so you might want to use a flathead screwdriver to ensure the connections are tight.
 
-Cut two short (~6 inch) pieces of wire, preferably of different colors, and strip the ends to a short length (1/8 to 1/4 inch) Locate the green terminal block on the Jetson and attach one wire to the `+Vin` terminal, and another to one of the `+12V` terminals on the power board. Connect the other stripped wire to the `GND` terminal on the Jetson and the `GND` terminal on the power board corresponding to the `+12V` connection you made earlier. Use a small flathead screwdriver to secure the wires in place.
+<img src="images/mech_antenna_connected.jpg" width="400">
+<img src="images/mech_antenna_disconnected.jpg" width="400">
 
-TODO pictures
+Cut two short (~6 inch) pieces of wire, preferably of different colors, and strip the ends to a short length (1/8 to 1/4 inch) Locate the green terminal block on the Jetson and attach one wire to the `+Vin` terminal, and another to one of the `12V` terminals on the power board. Connect the other stripped wire to the `GND` terminal on the Jetson and the `GND` terminal on the power board corresponding to the `12V` connection you made earlier. Use a small flathead screwdriver to secure the wires in place.
 
-Screw both the Jetson and the power board onto the chassis using 10mm Phillips screws. Ensure that the wires for neither the Wi-Fi antenna nor the Jetson's power connections get pinched. It might help to tuck both sets of wires underneath the power board. (Don't tuck them underneath the Jetson because they might restrict airflow or obstruct the fan's blades.)
+<img src="images/mech_jetson_power_wires_stripped.jpg" width="400">
+<img src="images/mech_jetson_power_wires_connected.jpg" width="400">
 
-TODO picture
+Screw both the Jetson and the power board onto the chassis. The Jetson should be secured using longer (20mm) Phillips screws, while the power board should be secured using 10mm screws. Note that the Jetson also comes with four white plastic standoffs; these should be placed between the Jetson PCB and heatsink before threading the screws through. Ensure that the wires for neither the Wi-Fi antenna nor the Jetson's power connections get pinched. It might help to tuck both sets of wires underneath the power board. (Don't tuck them underneath the Jetson because they might restrict airflow or obstruct the fan's blades.)
 
-Don't mount the LIDAR yet. We will do this at the end. (The LIDAR is very expensive, and we don't want to risk it getting damaged when mounting the chassis.)
+<img src="images/mech_jetson_power_board_mounted.jpg" width="400">
+
+Don't mount the LIDAR yet. We will do this after mounting the chassis to the car. (The LIDAR is very expensive, and we don't want to risk it getting damaged when mounting the chassis.)
 
 ## Mounting the Chassis to the Car
 
-Place the chassis onto the five standoffs on the car base and align the chassis drill holes with the standoffs. Use five Phillips screws to secure the chassis to the standoffs. Your car should now look like the one in the image below:
+Place the chassis onto the five standoffs on the car base and align the chassis drill holes with the standoffs you attached earlier. Use five 10mm Phillips screws to secure the chassis to the standoffs. Your car should now look like the one in the image below:
 
-TODO picture
+<img src="images/mech_chassis_mounted.jpg" width="400">
 
 ## Mounting the LIDAR to the Chassis
 
@@ -77,41 +82,41 @@ Check to make sure you have the following parts for mounting the LIDAR:
 
 The parts are also shown in the image below.
 
-TODO picture
+<img src="images/mech_lidar_parts.jpg" width="400">
 
 The LIDAR should have two cords: one for power and another for either Ethernet or USB. Cut the end of the power cord, leaving 1-2 feet of cable. Strip the end, cut away all wires except for the blue and brown ones, and strip the wires to 1/8 inch.
 
-Mount the white brackets to the black tree-shaped base as shown in the picture bwlow. (Note: the picture shows the rough side of the base. The glossy side is on the back.)
+Mount the white brackets to the black tree-shaped base as shown in the pictures below.
 
-TODO picture
+<img src="images/mech_lidar_brackets_front.jpg" width="400">
 
-Attach the LIDAR to the rough side of the base using the two screws. Note: The base has four screw holes and that the LIDAR only has two; just attach the two screws where the holes in the LIDAR are.
+Attach the LIDAR to the rough side of the base using the two screws. Note: The base has four screw holes and the LIDAR only has two; just attach the two screws where the holes in the LIDAR are.
 
-TODO picture
+<img src="images/mech_lidar_brackets_back.jpg" width="400">
 
 Locate the two mounting holes on the front of the car near the front bumper. Mount the LIDAR by fitting the two protruding parts of the white mounting brackets into the holes. The open part of the "C" in the brackets should face forward as shown below. If done correctly, two of the holes on the LIDAR base should match up with the two 19mm standoffs you mounted earlier. Secure the base to these standoffd using two 10mm Phillips screws.
 
-TODO picture
+<img src="images/mech_lidar_bumper_holes.jpg" width="400">
+<img src="images/mech_lidar_mounted.jpg" width="400">
+<img src="images/mech_lidar_secured.jpg" width="400">
 
-TODO picture
+Attach the LIDAR's power cable to a free 12V terminal block on the power board. The brown wire should go to the `12V` terminal, and the blue wire should go to the corresponding `GND` terminal. The side of the LIDAR has a pinout as well if you get confused.
 
-Attach the LIDAR's power cable to a free 12V terminal block on the power board. The brown wire should go to the `12V` terminal, and the blue wire should go to the corresponding `GND` terminal.
+<img src="images/mech_lidar_power_connection.jpg" width="400">
 
-TODO picture
+If the LIDAR has an Ethernet cable, attach it to an Ethernet to USB adapter like the one shown below. In either case, plug the free USB cable into a USB hub.
 
-If the LIDAR has an Ethernet cable, attach it to an Ethernet to USB adapter like the one shown below. In either case, opug the free USB cable into a USB hub.
+<img src="images/mech_lidar_usb_to_ethernet.jpg" width="400">
 
-TODO picture
+Plug a USB micro cable into the USB port on the IMU and the other end into the USB hub. If desired, secure the IMU to the chassis using screws or another method of your choice. (Note: how you mount the IMU depends on what kind of IMU you have. The one I have is cheap, so I just secure it using cable ties.)
 
-Plug a USB micro cable into the USB port on the IMU and the other end into the USB hub. If desired, secure the IMU to the chassis using screws or another method of your choice. (Note: how you mount the IMU depends on what IMU you have. The one I have is cheap, so I just secure it using cable ties.)
-
-TODO picture
+<img src="images/mech_imu.jpg" width="400">
 
 **Optional:** If you plan on using a USB keyboard and mouse for the Jetson and have a small (less than 5 port) USB hub, plug another USB hub into the first one.
 
-TODO picture
+<img src="images/mech_extra_usb_hub.jpg" width="400">
 
-Plug the cord of the USB hub into the USB port on the Jetson. If your hub has power buttons, ensure all of them are set to the on position. At this point, your car should be assembled, sans VESC.
+Plug the cord of the USB hub into the USB port on the Jetson. If your hub has power buttons, ensure all of them are set to the ON position. At this point, your car should be assembled, sans VESC.
 
 # VESC Connections
 Before you begin, make sure you have the following items:
@@ -145,7 +150,7 @@ The VESC should now be on the right side of the chassis. Pull the 2-pin VESC bat
 <img src="images/hw_vesc_battery_pull.jpg" width="400">
 <img src="images/hw_vesc_mount.jpg" width="400">
 
-Connect the VESC battery connector to the battery splitter, and connect the white 4-pin header on the battery splitter to the corresponding header on the power distribution PCB. Ensure that the large silver toggle switches U$3, U$4, and U$5 on the power board are OFF (toggled towards the white battery header).
+Connect the VESC battery connector to the battery splitter, and connect the white 4-pin header on the battery splitter to the corresponding header on the power distribution PCB. Ensure that the large silver toggle switches `U$3`, `U$4`, and `U$5` on the power board are OFF (toggled towards the white battery header).
 
 <img src="images/hw_connect_splitter_vesc.jpg" width="400">
 <img src="images/hw_connect_splitter_power_board.jpg" width="400">
@@ -155,16 +160,18 @@ Plug the battery into the remaining end of the splitter, and tuck the battery in
 
 <img src="images/hw_battery_mount.jpg" width="400">
 
-At this point, the hardware should be set up, and you can turn the car on by toggling switch U$3 on the power board.
+At this point, the hardware should be set up, and you can turn the car on by toggling switch `U$3` on the power board.
 
 # Tips for Cable Management
 
-It's a good idea to use cable or zip ties to secure some of the longer wires, such as the LIDAR power and Ethernet cords and USB cables. I tied these up and placed these near the remaining oval-shaped cutout in the chassis to ensure that they don't get in the way of anything.
-
 Place the primary hub under the power board and route all USB cables behind the standoff next to the Teensy. (If you used another hub for keyboard and mouse, don't worry about securing it; you can disconnect it before driving the car.) Using shorter USB cables may help.
+
+<img src="images/mech_usb_hub_placement.jpg" width="400">
 
 For the VESC, make sure the motor wires are on the right side of the car and are not touching the rod for the drivetrain. If you have room on the left side, you can place a USB cable above the battery as well. (Be aware that this will make it more tedious to remove the battery, however.)
 
+It's a good idea to use cable or zip ties to secure some of the longer wires, such as the LIDAR power and Ethernet cords and USB cables. On my car, I tied these up and placed these near the remaining oval-shaped cutout in the chassis to ensure that they don't get in the way of anything.
+
 See the image below for an example of how you might want to place the cables.
 
-TODO picture
+<img src="images/mech_cable_management.jpg" width="400">
