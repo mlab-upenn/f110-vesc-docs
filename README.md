@@ -53,8 +53,8 @@ Once you've done this, attach the Jetson Wi-Fi antenna to the standoffs using tw
 
 Attach the two wires for the Jetson Wi-Fi antenna to the two gold-colored connectors near the fan connector on the heat sink. This can be a little tricky, so you might want to use a flathead screwdriver to ensure the connections are tight.
 
-<img src="images/mech_antenna_connected.jpg" width="400">
 <img src="images/mech_antenna_disconnected.jpg" width="400">
+<img src="images/mech_antenna_connected.jpg" width="400">
 
 Cut two short (~6 inch) pieces of wire, preferably of different colors, and strip the ends to a short length (1/8 to 1/4 inch) Locate the green terminal block on the Jetson and attach one wire to the `+Vin` terminal, and another to one of the `12V` terminals on the power board. Connect the other stripped wire to the `GND` terminal on the Jetson and the `GND` terminal on the power board corresponding to the `12V` connection you made earlier. Use a small flathead screwdriver to secure the wires in place.
 
