@@ -80,7 +80,7 @@ The parts are also shown in the image below.
 
 <img src="images/mech_lidar_parts.jpg" width="400">
 
-The LIDAR should have two cords: one for power and another for either Ethernet or USB. Cut the end of the power cord, leaving 1-2 feet of cable. Strip the end, cut away all wires except for the blue and brown ones, and strip the wires to 1/8 inch.
+The LIDAR should have two cords: one for power and another for either Ethernet or USB. Cut the end of the power cord, leaving 1-2 feet of cable. Strip the end, cut away all wires except for the blue and brown ones, and strip those two wires to 1/8 inch.
 
 Mount the white brackets to the black tree-shaped base as shown in the pictures below.
 
@@ -100,9 +100,9 @@ Attach the LIDAR's power cable to a free 12V terminal block on the power board. 
 
 <img src="images/mech_lidar_power_connection.jpg" width="400">
 
-If the LIDAR has an Ethernet cable, attach it to an Ethernet to USB adapter like the one shown below. In either case, plug the free USB cable into a USB hub.
+If the LIDAR has an Ethernet cable, attach it to the Ethernet port on the Jetson. If it has a USB cable, plug it into the USB hub.
 
-<img src="images/mech_lidar_usb_to_ethernet.jpg" width="400">
+<img src="images/mech_lidar_ethernet.jpg" width="400">
 
 **Optional:** If you plan on using a USB keyboard and mouse for the Jetson and have a small (less than 5 port) USB hub, plug another USB hub into the first one.
 
@@ -162,8 +162,9 @@ Place the primary hub under the power board and route all USB cables behind the 
 
 For the VESC, make sure the motor wires are on the right side of the car and are not touching the rod for the drivetrain. If you have room on the left side, you can place a USB cable above the battery as well. (Be aware that this will make it more tedious to remove the battery, however.)
 
-It's a good idea to use cable or zip ties to secure some of the longer wires, such as the LIDAR power and Ethernet cords and USB cables. On my car, I tied these up and placed these near the remaining oval-shaped cutout in the chassis to ensure that they don't get in the way of anything.
+It's a good idea to use cable or zip ties to secure some of the longer wires, such as the LIDAR power and Ethernet cords and USB cables. On my car, I tucked the cables for the LIDAR  underneath the chassis through the oval-shaped cutout on the left side of the chassis.
 
-See the image below for an example of how you might want to place the cables.
+See the images below for an example of how you might want to organize the cables.
 
-<img src="images/mech_cable_management.jpg" width="400">
+<img src="images/mech_cable_management_left.jpg" width="400">
+<img src="images/mech_cable_management_right.jpg" width="400">
