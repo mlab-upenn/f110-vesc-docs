@@ -47,10 +47,6 @@ Once you've done this, attach the Jetson Wi-Fi antenna to the standoffs using tw
 
 <img src="images/mech_power_board_antenna_screws.jpg" width="400">
 
-**Optional:** If you plan to use the Teensy motor driver instead of the VESC, insert the Teensy into the two long headers on the power board. Make sure the USB port faces toward the outside of the board.
-
-<img src="images/mech_power_board_teensy.jpg" width="400">
-
 Attach the two wires for the Jetson Wi-Fi antenna to the two gold-colored connectors near the fan connector on the heat sink. This can be a little tricky, so you might want to use a flathead screwdriver to ensure the connections are tight.
 
 <img src="images/mech_antenna_disconnected.jpg" width="400">
@@ -107,10 +103,6 @@ Attach the LIDAR's power cable to a free 12V terminal block on the power board. 
 If the LIDAR has an Ethernet cable, attach it to an Ethernet to USB adapter like the one shown below. In either case, plug the free USB cable into a USB hub.
 
 <img src="images/mech_lidar_usb_to_ethernet.jpg" width="400">
-
-Plug a USB micro cable into the USB port on the IMU and the other end into the USB hub. If desired, secure the IMU to the chassis using screws or another method of your choice. (Note: how you mount the IMU depends on what kind of IMU you have. The one I have is cheap, so I just secure it using cable ties.)
-
-<img src="images/mech_imu.jpg" width="400">
 
 **Optional:** If you plan on using a USB keyboard and mouse for the Jetson and have a small (less than 5 port) USB hub, plug another USB hub into the first one.
 
