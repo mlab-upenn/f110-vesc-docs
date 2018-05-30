@@ -1,6 +1,8 @@
 # f110-vesc-docs
 Documentation for setting up the F1/10 platform and the VESC speed controller.
 
+<img src="images/cover_image.jpg" width="400">
+
 # Mechanical Setup
 We will first assemble the car chassis and install the Jetson and power distribution board before setting up the VESC.
 
@@ -152,19 +154,19 @@ Plug the battery into the remaining end of the splitter, and tuck the battery in
 
 <img src="images/hw_battery_mount.jpg" width="400">
 
-At this point, the hardware should be set up, and you can turn the car on by toggling switch `U$3` on the power board.
+At this point, the hardware should be set up. Your car should look similar to the one below.
+
+<img src="images/final_assembled_car.jpg" width="400">
 
 # Tips for Cable Management
 
-Place the primary hub under the power board and route all USB cables behind the standoff next to the Teensy. (If you used another hub for keyboard and mouse, don't worry about securing it; you can disconnect it before driving the car.) Using shorter USB cables may help.
+Place the primary hub under the power board and route all USB cables behind the standoff next to the Teensy headers. (If you used another hub for keyboard and mouse, don't worry about securing it; you can disconnect it before driving the car.) Using shorter USB cables may help.
 
-<img src="images/mech_usb_hub_placement.jpg" width="400">
+For the VESC, make sure the motor wires are on the right side of the car and are not touching the rod for the drivetrain. If you have room on the left side, you can place the USB cable for the VESC above the battery. All of the cables should be able to fit between the car chassis and base.
 
-For the VESC, make sure the motor wires are on the right side of the car and are not touching the rod for the drivetrain. If you have room on the left side, you can place a USB cable above the battery as well. (Be aware that this will make it more tedious to remove the battery, however.)
+It's a good idea to use cable or zip ties to secure some of the longer wires, such as the LIDAR power and Ethernet cords and USB cables. You may want to tuck the cables for the LIDAR underneath the chassis through the oval-shaped cutout on the left side of the chassis. Wrapping the cables around the base of the LIDAR might also work.
 
-It's a good idea to use cable or zip ties to secure some of the longer wires, such as the LIDAR power and Ethernet cords and USB cables. On my car, I tucked the cables for the LIDAR  underneath the chassis through the oval-shaped cutout on the left side of the chassis.
+Below is an example of how you might want to organize the cables.
 
-See the images below for an example of how you might want to organize the cables.
-
-<img src="images/mech_cable_management_left.jpg" width="400">
 <img src="images/mech_cable_management_right.jpg" width="400">
+<img src="images/mech_cable_management_left.jpg" width="400">
