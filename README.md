@@ -69,7 +69,7 @@ Don't mount the LIDAR yet. We will do this after mounting the chassis to the car
 
 Place the chassis onto the five standoffs on the car base and align the chassis drill holes with the standoffs you attached earlier. Use five 10mm Phillips screws to secure the chassis to the standoffs. Your car should now look like the one in the image below:
 
-<img src="images/final_assembled_car.jpg" width="400">
+<img src="images/mech_chassis_mounted.jpg" width="400">
 
 ## Mounting the LIDAR to the Chassis
 
@@ -170,3 +170,4 @@ Below is an example of how you might want to organize the cables.
 
 <img src="images/mech_cable_management_right.jpg" width="400">
 <img src="images/mech_cable_management_left.jpg" width="400">
+<img src="images/mech_cable_management_lidar.jpg" width="400">
