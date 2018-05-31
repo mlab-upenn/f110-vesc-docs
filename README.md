@@ -1,7 +1,7 @@
 # f110-vesc-docs
 Documentation for setting up the F1/10 platform and the VESC speed controller.
 
-<img src="images/cover_image.jpg" width="400">
+<img src="images/cover_image.png" width="400">
 
 # Mechanical Setup
 We will first assemble the car chassis and install the Jetson and power distribution board before setting up the VESC.
