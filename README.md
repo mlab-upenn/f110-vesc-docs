@@ -6,6 +6,9 @@ Documentation for setting up the F1/10 platform and the VESC speed controller.
 # Necessary tools
 Allen screwdriver
 
+Three 45mm standoffs
+Three 10mm Allen screws
+
 # Mechanical Setup
 We will first assemble the car chassis and install the Jetson and power distribution board before setting up the VESC.
 
