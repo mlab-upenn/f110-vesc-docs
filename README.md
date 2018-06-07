@@ -122,16 +122,16 @@ The LIDAR should have two cords: one for power and another for either Ethernet o
 Mount the white brackets to the black tree-shaped base as shown in the pictures below.
 
 <img src="images/mech_lidar_brackets_back.jpg" width="400">
+<img src="images/mech_brackets.jpg" width="400">
 
 Attach the LIDAR to the rough side of the tree-shaped base using the two screws. Note: The base has four screw holes and the LIDAR only has two; just attach the two screws where the holes in the LIDAR are.
 
 Locate the two mounting holes on the front of the car near the front bumper (see arrows on pic below). 
-<img src="images/mech_brackets.jpg" width="400">
+<img src="images/mech_lidar_bumper_holes.jpg" width="400">
 
 Mount the LIDAR by fitting the two protruding parts of the white mounting brackets into the holes. 
 The open part of the "C" in the brackets should face forward as shown below. 
 
-<img src="images/mech_lidar_bumper_holes.jpg" width="400">
 <img src="images/mech_lidar_mounted.jpg" width="400">
 
 If done correctly, two of the holes on the LIDAR base should match up with the two 19mm standoffs you mounted earlier. Secure the base to these standoffd using two 10mm Phillips screws.
