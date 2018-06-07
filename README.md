@@ -60,13 +60,15 @@ Mount two more (19mm) standoffs to the front part of the chassis for the LIDAR.
 
 ## Mounting the Jetson and Power Board
 
-Before mounting the power board to the chassis, attach two 20mm standoffs to the power board using  screws. (The mounting holes for the standoffs are located near the long headers for the Teensy. Note that these standoffs might already be attached to the WiFi.)
+Attach two 20mm standoffs to the Jetson WiFi using two screws (These standoffs might already be attached to the WiFi.)
+
+Then attach the standoffs (and WiFi) to the powerboard using two more screws. The mounting holes for the standoffs are located near the long headers for the Teensy.
+Ensure that the antenna is mounted towards the board so that when the antennas are extended, they extend over the board and not away from it. See the picture below for clarification.
+
+<img src="images/mech_power_board_antenna_screws.jpg" width="400">
 
 <img src="images/mech_power_board_antenna_standoffs.jpg" width="400">
 
-Once you've done this, attach the Jetson Wi-Fi antenna to the standoffs using two more Phillips screws. Ensure that the antenna is mounted towards the board so that when the antennas are extended, they extend over the board and not away from it. See the picture below for clarification.
-
-<img src="images/mech_power_board_antenna_screws.jpg" width="400">
 
 Attach the two wires for the Jetson Wi-Fi antenna to the two gold-colored connectors near the fan connector on the heat sink. This can be a little tricky, so you might want to use a flathead screwdriver to ensure the connections are tight.
 
