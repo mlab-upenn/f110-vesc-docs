@@ -10,6 +10,8 @@ Nose pliers
 
 Wire stripper 
 
+Screwdrivers (flathead, including a teeny-tiny one for power terminals on the power board, Philips, etc)
+
 A mm-graded ruler, because god knows you won't be able to keep every part in its labeled bag
 
 (Potentially, a power drill and a .128 drill bit if you need to drill additional holes in the plastic chassis)
@@ -23,6 +25,8 @@ Two 13mm threaded standoffs (we measure the length excluding the screw part)
 Two wire spools (2 colors)
 
 Several screws that fit into the standoffs and the chassis holes (10mm long, 2.95mm diameter; example in picture)
+
+20mm screws
 
 <img src="images/screws.jpg" width="400">
 
@@ -88,7 +92,7 @@ Attach the other stripped wire to the `GND` terminal on the Jetson and the `GND`
 <img src="images/mech_jetson_power_wires_stripped.jpg" width="400">
 <img src="images/mech_jetson_power_wires_connected.jpg" width="400">
 
-# Mounting the Jetson and Power Board
+# Mounting the Jetson and Power Board on the chassis
 
 Screw both the Jetson and the power board onto the chassis. The Jetson should be secured using longer (20mm) Phillips screws, while the power board should be secured using 10mm screws. Note that the Jetson also comes with four white plastic standoffs; these should be placed between the Jetson PCB and heatsink before threading the screws through. Ensure that the wires for neither the Wi-Fi antenna nor the Jetson's power connections get pinched. It might help to tuck both sets of wires underneath the power board. (Don't tuck them underneath the Jetson because they might restrict airflow or obstruct the fan's blades.)
 
@@ -98,7 +102,7 @@ Don't mount the LIDAR yet. We will do this after mounting the chassis to the car
 
 ## Mounting the Chassis to the Car
 
-Place the chassis onto the five standoffs on the car base and align the chassis drill holes with the standoffs you attached earlier. Use five 10mm Phillips screws to secure the chassis to the standoffs. Your car should now look like the one in the image below:
+Place the chassis onto the five standoffs on the car base and align the chassis drill holes with the standoffs you attached earlier. Use five 10mm screws to secure the chassis to the standoffs. Your car should now look like the one in the image below:
 
 <img src="images/mech_chassis_mounted.jpg" width="400">
 
@@ -118,12 +122,15 @@ The LIDAR should have two cords: one for power and another for either Ethernet o
 Mount the white brackets to the black tree-shaped base as shown in the pictures below.
 
 <img src="images/mech_lidar_brackets_back.jpg" width="400">
+<img src="images/mech_brackets.jpg" width="400">
 
-Attach the LIDAR to the rough side of the base using the two screws. Note: The base has four screw holes and the LIDAR only has two; just attach the two screws where the holes in the LIDAR are.
+Attach the LIDAR to the rough side of the tree-shaped base using the two screws. Note: The base has four screw holes and the LIDAR only has two; just attach the two screws where the holes in the LIDAR are.
 
 <img src="images/mech_lidar_brackets_front.jpg" width="400">
 
-Locate the two mounting holes on the front of the car near the front bumper. Mount the LIDAR by fitting the two protruding parts of the white mounting brackets into the holes. The open part of the "C" in the brackets should face forward as shown below. If done correctly, two of the holes on the LIDAR base should match up with the two 19mm standoffs you mounted earlier. Secure the base to these standoffd using two 10mm Phillips screws.
+Locate the two mounting holes on the front of the car near the front bumper (see arrows on pic below). 
+Mount the LIDAR by fitting the two protruding parts of the white mounting brackets into the holes. 
+The open part of the "C" in the brackets should face forward as shown below. If done correctly, two of the holes on the LIDAR base should match up with the two 19mm standoffs you mounted earlier. Secure the base to these standoffd using two 10mm Phillips screws.
 
 <img src="images/mech_lidar_bumper_holes.jpg" width="400">
 <img src="images/mech_lidar_mounted.jpg" width="400">
