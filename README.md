@@ -3,11 +3,22 @@ Documentation for setting up the F1/10 platform and the VESC speed controller.
 
 <img src="images/cover_image.png" width="400">
 
-# Necessary tools
+# Necessary tools and generic parts
 Allen screwdriver
 
-Three 45mm standoffs
-Three 10mm Allen screws
+Nose pliers
+
+A mm-graded ruler, because god knows you won't be able to keep every part in its labeled bag
+
+(Potentially, a power drill and a .128 drill bit if you need to drill additional holes in the plastic chassis)
+
+Eleven 45mm standoffs
+
+Two 19mm standoffs
+
+Two 13mm threaded standoffs (we measure the length excluding the screw part)
+
+Several 10mm screws that fit into the standoffs and the chassis holes
 
 # Mechanical Setup
 We will first assemble the car chassis and install the Jetson and power distribution board before setting up the VESC.
@@ -24,20 +35,20 @@ Begin by installing three 45mm standoffs into the circled holes pictured below. 
 <img src="images/mech_base_allen_screws.jpg" width="400">
 <img src="images/mech_base_screws_attached.jpg" width="400">
 
-Next, install two threaded 14mm standoffs into the front holes in the car base. Don't mount the chassis to the car yet since we still need to mount the Jetson and power board to the chassis.
+Next, install two threaded 14mm standoffs into the front holes in the car base (you might need to use the nosepliers for this). Don't mount the chassis to the car yet since we still need to mount the Jetson and power board to the chassis.
 
 <img src="images/mech_base_front_screws_attached.jpg" width="400">
 
 ## Installing the Power Board, Jetson, and LIDAR Standoffs
 
-Mount 4 standoffs to the black laser-cut chassis in the position shown below. Thread the provided 10mm Phillips head screws through the drill holes and screw them into the standoffs to secure them.
+Mount 4 45mm standoffs to the black laser-cut chassis in the position shown below. Thread the provided 10mm Phillips head screws through the drill holes and screw them into the standoffs to secure them.
 
 (**Important:** The chassis has a smooth, glossy side and a rougher side. Ensure the standoffs are mounted on the glossy side, with the screws on the rough side. Otherwise, the power board won't fit when you try to mount it.)
 
 <img src="images/mech_power_screws_front.jpg" width="400">
 <img src="images/mech_power_screws_back.jpg" width="400">
 
-Do the same for the Jetson with four more 35mm standoffs, also mounted on the glossy side. For the Jetson, ensure the standoffs are mounted near the **left** cut-out oval on the chassis, not the right one.
+Do the same for the Jetson with four more 45mm standoffs, also mounted on the glossy side. For the Jetson, ensure the standoffs are mounted near the **left** cut-out oval on the chassis, not the right one.
 
 <img src="images/mech_jetson_screws_front.jpg" width="400">
 
