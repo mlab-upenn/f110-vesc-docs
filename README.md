@@ -125,8 +125,6 @@ Mount the white brackets to the black tree-shaped base as shown in the pictures 
 
 Attach the LIDAR to the rough side of the tree-shaped base using the two screws. Note: The base has four screw holes and the LIDAR only has two; just attach the two screws where the holes in the LIDAR are.
 
-<img src="images/mech_lidar_brackets_front.jpg" width="400">
-
 Locate the two mounting holes on the front of the car near the front bumper (see arrows on pic below). 
 <img src="images/mech_brackets.jpg" width="400">
 
