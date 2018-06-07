@@ -18,7 +18,9 @@ Two 19mm standoffs
 
 Two 13mm threaded standoffs (we measure the length excluding the screw part)
 
-Several 10mm screws that fit into the standoffs and the chassis holes
+Several screws that fit into the standoffs and the chassis holes (10mm long, 2.95mm diameter; example in picture)
+
+<img src="images/screws.jpg" width="400">
 
 # Mechanical Setup
 We will first assemble the car chassis and install the Jetson and power distribution board before setting up the VESC.
@@ -58,7 +60,7 @@ Mount two more (19mm) standoffs to the front part of the chassis for the LIDAR.
 
 ## Mounting the Jetson and Power Board
 
-Before mounting the power board to the chassis, attach two 25mm standoffs to the power board using Phillips screws. (The mounting holes for the standoffs are located near the long headers for the Teensy.)
+Before mounting the power board to the chassis, attach two 20mm standoffs to the power board using  screws. (The mounting holes for the standoffs are located near the long headers for the Teensy. Note that these standoffs might already be attached to the WiFi.)
 
 <img src="images/mech_power_board_antenna_standoffs.jpg" width="400">
 
