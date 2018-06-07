@@ -8,15 +8,19 @@ Allen screwdriver
 
 Nose pliers
 
+Wire stripper 
+
 A mm-graded ruler, because god knows you won't be able to keep every part in its labeled bag
 
 (Potentially, a power drill and a .128 drill bit if you need to drill additional holes in the plastic chassis)
 
 Eleven 45mm standoffs
 
-Two 19mm standoffs
+Two 20mm standoffs
 
 Two 13mm threaded standoffs (we measure the length excluding the screw part)
+
+Two wire spools (2 colors)
 
 Several screws that fit into the standoffs and the chassis holes (10mm long, 2.95mm diameter; example in picture)
 
@@ -58,27 +62,33 @@ Mount two more (19mm) standoffs to the front part of the chassis for the LIDAR.
 
 <img src="images/mech_lidar_screws_front.jpg" width="400">
 
-## Mounting the Jetson and Power Board
+## Connecting the Jeston to the Wifi
 
 Attach two 20mm standoffs to the Jetson WiFi using two screws (These standoffs might already be attached to the WiFi.)
 
 Then attach the standoffs (and WiFi) to the powerboard using two more screws. The mounting holes for the standoffs are located near the long headers for the Teensy.
-Ensure that the antenna is mounted towards the board so that when the antennas are extended, they extend over the board and not away from it. See the picture below for clarification.
+Ensure that the antenna is mounted towards the board so that when the antennas are extended, they extend over the board and not away from it. 
+See the pictures below for clarification.
 
 <img src="images/mech_power_board_antenna_screws.jpg" width="400">
 
 <img src="images/mech_power_board_antenna_standoffs.jpg" width="400">
 
-
-Attach the two wires for the Jetson Wi-Fi antenna to the two gold-colored connectors near the fan connector on the heat sink. This can be a little tricky, so you might want to use a flathead screwdriver to ensure the connections are tight.
+Attach the two wires for the Jetson Wi-Fi antenna to the two gold-colored connectors near the fan connector on the heat sink (see arrows on pic below). This can be a little tricky, so you might want to use a flathead screwdriver to ensure the connections are tight.
 
 <img src="images/mech_antenna_disconnected.jpg" width="400">
 <img src="images/mech_antenna_connected.jpg" width="400">
 
-Cut two short (~6 inch) pieces of wire, preferably of different colors, and strip the ends to a short length (1/8 to 1/4 inch) Locate the green terminal block on the Jetson and attach one wire to the `+Vin` terminal, and another to one of the `12V` terminals on the power board. Connect the other stripped wire to the `GND` terminal on the Jetson and the `GND` terminal on the power board corresponding to the `12V` connection you made earlier. Use a small flathead screwdriver to secure the wires in place.
+# Connecting the Jetson to the power board
+
+Cut two short (~6 inch) pieces of wire, preferably of different colors, and strip both ends to a short length (1/8 to 1/4 inch). Locate the green terminal block on the Jetson and attach one wire to the `+Vin` terminal, and another to one of the green `12V` terminals on the power board.
+(To attach, insert the stripped end into the terminal and screw the little screw tight).
+Attach the other stripped wire to the `GND` terminal on the Jetson and the `GND` terminal on the power board corresponding to the `12V` connection you made earlier. Use a small flathead screwdriver to secure the wires in place.
 
 <img src="images/mech_jetson_power_wires_stripped.jpg" width="400">
 <img src="images/mech_jetson_power_wires_connected.jpg" width="400">
+
+# Mounting the Jetson and Power Board
 
 Screw both the Jetson and the power board onto the chassis. The Jetson should be secured using longer (20mm) Phillips screws, while the power board should be secured using 10mm screws. Note that the Jetson also comes with four white plastic standoffs; these should be placed between the Jetson PCB and heatsink before threading the screws through. Ensure that the wires for neither the Wi-Fi antenna nor the Jetson's power connections get pinched. It might help to tuck both sets of wires underneath the power board. (Don't tuck them underneath the Jetson because they might restrict airflow or obstruct the fan's blades.)
 
